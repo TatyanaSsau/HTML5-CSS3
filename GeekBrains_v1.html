@@ -4,8 +4,14 @@
   <meta charset="utf-8">
   <title>HomeTask</title>
                 <style>
+                .container {
+                width: 1172px;
+                margin: 0 auto;
+                }
+
                 .header
                 {
+                padding: 20px 0;
                 font-family: Arial;
                 left: 0%;
                 right: 0%;
@@ -14,7 +20,13 @@
                 background: #445161;
                 color: white}
 
-                .header h1
+                .wrapper
+                {
+                display: flex;
+                justify-content: space-between;
+                }
+
+                .header_title
                 {
                 font-size: 60px;
                 font-style: normal;
@@ -24,13 +36,14 @@
                 text-align: left;
                 }
 
-                .header image { 
-                position: absolute;
+                .header_image { 
                 width: 472px;
                 height: 217px;
-                left: 750px;
-                top: 25px;
-                background: #FFFFFF;
+                background-color: white;
+                }
+
+                .header_li {
+                  margin-bottom: 10px;
                 }
 
                 .main 
@@ -67,16 +80,19 @@
                 </style>
 </head> 
  <body>
-  <div class="header">
-  <h1>Product name</h1>
-   <p><ul>
-     <li>Put on this page information about your product</li>
-     <li>A detailed description of your product</li>
-     <li>Tell us about the advantages and merits</li>
-     <li>Associate the page with the payment system</li>
-   </ul></p>
-   <div class="image">Image</div>
-  </div>
+  <header class="header">
+    <div class="container wrapper">
+      <div>
+       <h1 class="header_title">Product name</h1>
+       <p><ul>
+       <li class="header_li">Put on this page information about your product</li>
+       <li class="header_li">A detailed description of your product</li>
+       <li class="header_li">Tell us about the advantages and merits</li>
+       <li class="header_li">Associate the page with the payment system</li>
+      </ul></p></div>
+      <div class="header_image">Image</div>
+   </div>
+  </header>
 
   <div class="main">
   <section>
