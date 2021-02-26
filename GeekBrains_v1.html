@@ -9,6 +9,12 @@
                 margin: 0 auto;
                 }
 
+                .wrapper
+                {
+                display: flex;
+                justify-content: space-between;
+                }
+
                 .header
                 {
                 padding: 20px 0;
@@ -20,12 +26,6 @@
                 background: #445161;
                 color: white}
 
-                .wrapper
-                {
-                display: flex;
-                justify-content: space-between;
-                }
-
                 .header_title
                 {
                 font-size: 60px;
@@ -36,18 +36,20 @@
                 text-align: left;
                 }
 
+                .header_li 
+                {
+                  margin-bottom: 10px;
+                }
+
                 .header_image { 
                 width: 472px;
                 height: 217px;
                 background-color: white;
                 }
 
-                .header_li {
-                  margin-bottom: 10px;
-                }
-
                 .main 
-                {                                
+                { 
+                padding: 20px 0;                               
                 font-family: Arial;
                 font-style: normal;
                 font-weight: normal;
@@ -56,7 +58,7 @@
                 color: #333333;
                 }
 
-                .main h2
+                .main_title
                 {
                 width: 355px;
                 height: 36px;
@@ -69,14 +71,15 @@
                 line-height: 36px;
                 color: #445161;
                 }
-                .main figure
-                {
-                width: 1272px;
-                height: 400px;
-                left: 0px;
-                top: 615px;
-                background: #F5F5F5;
+                
+                .main_image { 
+                width: 430px;
+                height: 245px;
+                background-color: #445161;
+                left: 792px;
+                top: 45px;
                 }
+               
                 </style>
 </head> 
  <body>
@@ -90,17 +93,21 @@
        <li class="header_li">Tell us about the advantages and merits</li>
        <li class="header_li">Associate the page with the payment system</li>
       </ul></p></div>
-      <div class="header_image">Image</div>
+      <div class="header_image"> </div>
    </div>
   </header>
 
   <div class="main">
-  <section>
-   <h2>About your product</h2>
-   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis facilis fuga, illo at. Natus eos, eligendi illum rerum omnis porro ex, magni, explicabo veniam incidunt in quam sapiente ut ipsum.
-    Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde perferendis nemo debitis dolor.
-    </p>
-  </section>
+    <div class="container wrapper">
+      <section>
+       <h2 class="main_title">About your product</h2>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis facilis fuga, illo at. Natus eos, eligendi illum rerum omnis porro ex, magni, explicabo veniam incidunt in quam sapiente ut ipsum. </p>
+       <p>Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde perferendis nemo debitis dolor.
+        </p>
+       <div class="main_image"> </div>
+      </section>
+     </div>
+   </div>
 
   <figure>
   <figcaption>
