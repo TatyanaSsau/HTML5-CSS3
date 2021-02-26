@@ -4,7 +4,8 @@
   <meta charset="utf-8">
   <title>HomeTask</title>
                 <style>
-                .container {
+                .container 
+                {
                 width: 1172px;
                 margin: 0 auto;
                 }
@@ -41,7 +42,8 @@
                   margin-bottom: 10px;
                 }
 
-                .header_image { 
+                .header_image 
+                { 
                 width: 472px;
                 height: 217px;
                 background-color: white;
@@ -72,13 +74,52 @@
                 color: #445161;
                 }
                 
-                .main_image { 
+                .main_image 
+                { 
+                display: flex;
+                justify-content: space-between;
                 width: 430px;
                 height: 245px;
                 background-color: #445161;
-                left: 792px;
-                top: 45px;
                 }
+
+                .pluses_title
+                {
+                font-family: Arial;
+                font-size: 30px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 36px;
+                letter-spacing: 0px;
+                text-align: left;
+                }
+
+                .pluses_li
+                {
+                  margin-bottom: 34px;
+                  width: 556px;
+                  height: 72px;
+                  left: 42px;
+                  top: -7px;
+
+                  font-family: Arial;
+                  font-style: normal;
+                  font-weight: normal;
+                  font-size: 16px;
+                  line-height: 24px;
+
+                  color: #333333;
+                  page-break-inside: avoid;
+                  break-inside: avoid;
+                }
+
+                .pluses_list {
+                list-style: none;
+                height: 350px;
+                display: flex;
+                flex-direction: column; 
+                flex-wrap: wrap
+}
                
                 </style>
 </head> 
@@ -102,27 +143,25 @@
       <section>
        <h2 class="main_title">About your product</h2>
        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis facilis fuga, illo at. Natus eos, eligendi illum rerum omnis porro ex, magni, explicabo veniam incidunt in quam sapiente ut ipsum. </p>
-       <p>Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde perferendis nemo debitis dolor.
-        </p>
+       <p>Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde perferendis nemo debitis dolor.</p>
        <div class="main_image"> </div>
       </section>
      </div>
    </div>
 
-  <figure>
-  <figcaption>
-   <h2>Dignity and pluses product</h2>
-   <p><ul>
-     <li>Delectus dolorem vero quae beatae quasi dolor deserunt iste ame</li>
-     <li>Delectus dolorem vero quae beatae quasi dolor deserunt iste ame</li>
-     <li>Delectus dolorem vero quae beatae quasi dolor deserunt iste ame</li>
 
-     <li>Delectus dolorem vero quae beatae quasi dolor deserunt iste ame</li>
-     <li>Delectus dolorem vero quae beatae quasi dolor deserunt iste ame</li>
-     <li>Delectus dolorem vero quae beatae quasi dolor deserunt iste ame</li>
-   </ul></p></figcaption>
-  </figure>
-  <section>
+  <div class="pluses">
+    <h3 class="pluses_title">Dignity and pluses product</h3>
+     <ul class="pluses_list">
+       <li class="pluses_li">Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque, impedit iure placeat, ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime, quaerat porro totam, dolore minus inventore.</li>
+       <li class="pluses_li">Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque, impedit iure placeat, ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime, quaerat porro totam, dolore minus inventore.</li>
+       <li class="pluses_li">Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque, impedit iure placeat, ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime, quaerat porro totam, dolore minus inventore.</li>
+       <li class="pluses_li">Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque, impedit iure placeat, ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime, quaerat porro totam, dolore minus inventore.</li>
+       <li class="pluses_li">Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque, impedit iure placeat, ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime, quaerat porro totam, dolore minus inventore.</li>
+       <li class="pluses_li">Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque, impedit iure placeat, ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime, quaerat porro totam, dolore minus inventore.</li>
+     </ul>
+   </div>
+
    <h2>Screenshots</h2>
    <p><ul>
      <li>Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaq</li>
