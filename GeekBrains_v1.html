@@ -2,15 +2,26 @@
 <html>
  <head>
   <meta charset="utf-8">
-  <meta name="viewport">
+  <meta name="viewport" content="width=device-width">
   <title>HomeTask</title>
   <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
+</head> 
                 <style>
-                               .container 
+                body {
+                font-family: Arial;
+                }
+
+                .container 
                 {
                 width: 1170px;
                 margin-left: auto;
                 margin-right: auto;
+                }
+
+                .header
+                {
+                padding: 20px 0;
+                background: #445161;
                 }
 
                 .header_wrapper
@@ -20,36 +31,24 @@
                 align-items: center;
                 }
 
-                .header
-                {
-                padding: 20px 0;
-                font-family: Arial;
-                background: #445161;
-                }
-
                 .header_title
                 {
-                margin-bottom: 25px;
+                margin-bottom: 40px;
                 font-size: 60px;
-                font-style: normal;
-                font-weight: 400;
+                font-weight: 400px;
                 line-height: 69px;
                 letter-spacing: 0px;
                 text-align: left;
                 color: white;
                 }
 
-                .header_li 
+                .header_list
                 {
                 margin-bottom: 10px;
-
-                width: 422px;
+                width: 480px;
                 height: 23px;
                 left: 24px;
                 top: 134px;
-
-                font-family: Arial;
-                font-style: normal;
                 font-weight: normal;
                 font-size: 20px;
                 line-height: 23px;
@@ -74,8 +73,6 @@
                 .about 
                 { 
                 padding: 45px 0;
-                font-family: Arial;
-                width: 1272px;
                 height: 340px;
                 left: 0px;
                 top: 275px;
@@ -115,6 +112,7 @@
                 width: 430px;
                 height: 245px;
                 background-color: #445161;
+                justify-content: flex-end;
                 }
 
                 .pluses_wrapper
@@ -131,9 +129,7 @@
                 height: 36px;
                 left: 458px;
                 top: 25px;
-                font-family: Arial;
-                font-style: normal;
-                font-weight: normal;
+                font-weight: 400px;
                 font-size: 30px;
                 line-height: 36px;
                 display: flex;
@@ -148,9 +144,6 @@
                   height: 72px;
                   left: 42px;
                   top: -7px;
-
-                  font-family: Arial;
-                  font-style: normal;
                   font-weight: normal;
                   font-size: 16px;
                   line-height: 24px;
@@ -182,8 +175,6 @@
                 height: 36px;
                 left: 458px;
                 top: 25px;
-                font-family: Arial;
-                font-style: normal;
                 font-weight: normal;
                 font-size: 30px;
                 line-height: 36px;
@@ -192,16 +183,13 @@
                 color: #445161;
                 }
 
-                .screen_li
+                .screen_list              
                 {
                   margin-bottom: 34px;
                   width: 556px;
                   height: 72px;
                   left: 42px;
                   top: -7px;
-
-                  font-family: Arial;
-                  font-style: normal;
                   font-weight: normal;
                   font-size: 16px;
                   line-height: 24px;
@@ -226,8 +214,6 @@
                 height: 36px;
                 left: 458px;
                 top: 25px;
-                font-family: Arial;
-                font-style: normal;
                 font-weight: normal;
                 font-size: 30px;
                 line-height: 36px;
@@ -236,16 +222,13 @@
                 color: #445161;
                 }
 
-                .reviews_li
+                .reviews_list
                 {
                   margin-bottom: 34px;
                   width: 556px;
                   height: 72px;
                   left: 42px;
                   top: -7px;
-
-                  font-family: Arial;
-                  font-style: normal;
                   font-weight: normal;
                   font-size: 16px;
                   line-height: 24px;
@@ -265,32 +248,31 @@
                 }
                
                 </style>
-</head> 
  <body>
   <header class="header">
     <div class="container header_wrapper">
       <div class="header_block">
        <h1 class="header_title">Product name</h1>
-       <p><ul>
-       <li class="header_li">Put on this page information about your product</li>
-       <li class="header_li">A detailed description of your product</li>
-       <li class="header_li">Tell us about the advantages and merits</li>
-       <li class="header_li">Associate the page with the payment system</li>
-      </ul></p></div>
+       <ul>
+       <li class="header_list"><svg width="16" height="13" viewBox="0 0 16 13"><path d="M16 1.36689L5.02857 13L0 7.66816L1.28914 6.30127L5.02857 10.2565L14.7109 0L16 1.36689Z" fill="white"/></svg> Put on this page information about your product</li>
+        <li class="header_list"><svg width="16" height="13" viewBox="0 0 16 13"><path d="M16 1.36689L5.02857 13L0 7.66816L1.28914 6.30127L5.02857 10.2565L14.7109 0L16 1.36689Z" fill="white"/></svg> A detailed description of your product</li>
+        <li class="header_list"><svg width="16" height="13" viewBox="0 0 16 13"><path d="M16 1.36689L5.02857 13L0 7.66816L1.28914 6.30127L5.02857 10.2565L14.7109 0L16 1.36689Z" fill="white"/></svg> Tell us about the advantages and merits</li>
+        <li class="header_list"><svg width="16" height="13" viewBox="0 0 16 13"><path d="M16 1.36689L5.02857 13L0 7.66816L1.28914 6.30127L5.02857 10.2565L14.7109 0L16 1.36689Z" fill="white"/></svg> Associate the page with the payment system</li>
+        </ul>
+      </div>
       <div class="header_image"> </div>
     </div>
-   </div>
   </header>
 
   <section class="about">
     <div class="container about_wrapper">
      <div class="about_block">
-      <h2 class="about_title">About your product</h2>
+       <h2 class="about_title">About your product</h2>
        <p class="about_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis facilis fuga, illo at. Natus eos, eligendi illum rerum omnis porro ex, magni, explicabo veniam incidunt in quam sapiente ut ipsum. </p>
        <p class="about_text">Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde perferendis nemo debitis dolor.</p>
        </div>
        <div class="about_image"> </div>
-      </div>
+    </div>
   </section>
 
   <section class="pluses">
@@ -311,11 +293,11 @@
     <div class="container screen_wrapper">
      <h4 class="screen_title">Screenshots</h4>
      <ul>
-       <li class="screen_li">Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaq</li>
-       <li class="screen_li">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis</li>
+       <li class="screen_list">Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaq</li>
+       <li class="screen_list">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis</li>
 
-       <li class="screen_li">Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaq</li>
-       <li class="screen_li">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis</li>
+       <li class="screen_list">Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaq</li>
+       <li class="screen_list">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis</li>
        </ul>
       </div>
      </section>
@@ -324,11 +306,11 @@
     <div class="container reviews_wrapper">
      <h5 class="screen_title">Reviews</h5>
      <ul>
-       <li class="reviews_li">Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?</li>
-       <li class="reviews_li">Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?</li>
+       <li class="reviews_list">Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?</li>
+       <li class="reviews_list">Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?</li>
 
-       <li class="reviews_li">Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?</li>
-       <li class="reviews_li">Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?</li>
+       <li class="reviews_list">Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?</li>
+       <li class="reviews_list">Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?</li>
        </ul>
       </div>
      </section>
