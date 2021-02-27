@@ -36,8 +36,6 @@
                 margin-bottom: 40px;
                 font-size: 60px;
                 font-weight: 400px;
-                line-height: 69px;
-                letter-spacing: 0px;
                 text-align: left;
                 color: white;
                 }
@@ -118,7 +116,6 @@
                 padding: 25px 0 50px;
                 background: #F5F5F5;
                 height: 400px;
-
                 }
 
                 .pluses_wrapper
@@ -132,7 +129,7 @@
                 margin-bottom: 20px;
                 color: #445161;
                 display: flex;
-                text-align: center;
+                justify-content: center;
                 font-size: 30px;
                 }
 
@@ -148,8 +145,6 @@
                   line-height: 24px;
 
                   color: #333333;
-                  page-break-inside: avoid;
-                  break-inside: avoid;
                 }
 
                 .pluses_list {
@@ -168,18 +163,22 @@
                 height: 30px;
                 }
 
+                .screen
+                { 
+                padding: 25px 0 50px;
+                height: 490px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                }
+
                 .screen_title
                 {
-                width: 355px;
-                height: 36px;
-                left: 458px;
-                top: 25px;
-                font-weight: normal;
+                margin-top: 45px;
                 font-size: 30px;
-                line-height: 36px;
-                display: flex;
-                align-items: center;
                 color: #445161;
+                display: flex;
+                justify-content: center;
                 }
 
                 .screen_list              
@@ -206,6 +205,13 @@
                 flex-direction: column; 
                 flex-wrap: wrap
                 }
+
+                .screen_image {
+                width: 200px;
+                height: 150px;
+                margin-bottom: 25px;
+                background-color: #445161
+              }
 
                 .reviews_title
                 {
@@ -293,16 +299,21 @@
   <section class="screen">
     <div class="container screen_wrapper">
      <h4 class="screen_title">Screenshots</h4>
-     <ul>
-       <li class="screen_list">Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaq</li>
-       <li class="screen_list">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis</li>
-
-       <li class="screen_list">Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaq</li>
-       <li class="screen_list">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis</li>
+      <div class="screen_total_card">
+        <ul>
+         <img class="screen_image">
+         <li class="screen_list">Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaq</li>
+         <img class="screen_image">
+         <li class="screen_list">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis</li>
+         <img class="screen_image">
+         <li class="screen_list">Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaq</li>
+         <img class="screen_image">
+         <li class="screen_list">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis</li>
        </ul>
       </div>
-     </section>
-
+    </div>
+  </section>
+        
   <section class="reviews">
     <div class="container reviews_wrapper">
      <h5 class="screen_title">Reviews</h5>
@@ -314,7 +325,7 @@
        <li class="reviews_list">Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?</li>
        </ul>
       </div>
-     </section>
+    </section>
 </main>
 </body>
 
