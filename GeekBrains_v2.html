@@ -45,9 +45,10 @@
 
 				.reviews 
                 { 
-                padding: 25px 0 40px;
+                padding-top: 45px;
                 background: #F5F5F5;
                 height: 400px;
+				box-sizing: border-box;
                 }
 
 				.buyitnow
@@ -67,7 +68,24 @@
                 {
                 display: flex;
                 justify-content: space-between;
-                align-items: center;
+                 }
+
+				.about_wrapper
+                {
+                display: flex;
+                justify-content: space-between;
+                }
+
+                .screen_position
+                {
+                display: flex;
+                justify-content: space-around;
+                }
+
+                .reviews_wrapper
+                {
+                display: flex;
+                justify-content: space-between;
                 }
 
                 .header_title
@@ -100,12 +118,6 @@
                 justify-content: flex-end;
                 }
 
-                .about_wrapper
-                {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                }
 
                 .about_block
                 {
@@ -183,11 +195,77 @@
                 height: 350px;
                 }
 
-                .pluses_list img{
+                .pluses_list img {
                 margin-right: 10px;
                 width: 30px;
                 height: 30px;
                 }
+
+                .screen_title {
+				margin-bottom: 25px;
+                color: #445161;
+                font-size: 30px;
+                display: flex;
+                justify-content: center;
+                }
+
+                .reviews_title
+                {
+				margin-bottom: 25px;
+                color: #445161;
+                font-size: 30px;
+                display: flex;
+                justify-content: center;
+                }
+
+				.buyitnow_title
+                {
+				margin-bottom: 25px;
+                color: #445161;
+                font-size: 30px;
+                display: flex;
+                justify-content: center;
+                }
+
+                .screen_image {
+                background-color: #445162;
+   				width: 200px;
+    			height: 150px;
+    			margin-bottom: 25px;
+                }
+
+                .screen_mini_tit {
+               	font-size: 24px;
+     			margin-bottom: 14px;
+     			color: #445161;
+                }
+
+				.screen_text {
+               	font-size: 16px;
+                line-height: 24px;
+     			margin-left: : 13px;
+     			color: #333333;
+                }
+
+                .screen_position_left {
+                display: flex;
+                justify-content: space-between;
+                margin: 25px 100px 45px 50px;
+                }
+
+				.screen_position_right {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                }
+
+                .screen_center
+                {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                }
+
             </style>
 <body>
 	<header class="header">
@@ -235,76 +313,88 @@
 	<section class="screen">
 	    <div class="container screen_wrapper">
 			<h4 class="screen_title">Screenshots</h4>
-			<div class="screen_total_card">
-		        <img class="screen_image">
-		        <p class="screen_mini_tit"> The description for the image </p>
-		        <div class="screen_list">Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaq</div>
+				<div class="screen_center"
+					<div class="screen_position_left">
+				        <img class="screen_image">
+				        <div class="screen_block_text"> 
+				        	<p class="screen_mini_tit">The description for the image </p>
+				        	<p class="screen_text">Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde perferendis nemo debitis dolor.</p>
+				        </div>
 
-		        <img class="screen_image">
-		        <p class="screen_mini_tit"> The description for the image </p>
-		        <div class="screen_list">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis</div>
+				        <img class="screen_image">
+				        <div class="screen_block_text"> 
+				        	<p class="screen_mini_tit">The description for the image </p>
+				        	<p class="screen_text">Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde perferendis nemo debitis dolor.</p>
+				        </div>
+				    </div>  
+					<div class="screen_position_right">
+				        <img class="screen_image">
+				        <div class="screen_block_text"> 
+				        	<p class="screen_mini_tit">The description for the image </p>
+				        	<p class="screen_text">Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde perferendis nemo debitis dolor.</p>
+				        </div>
 
-		        <img class="screen_image">
-		        <p class="screen_mini_tit"> The description for the image </p>
-		        <div class="screen_list">Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaq</div>
-
-		        <img class="screen_image">
-		        <p class="screen_mini_tit"> The description for the image </p>
-		        <div class="screen_list">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis</div>
-	      	</div>
+				        <img class="screen_image">
+				        <div class="screen_block_text"> 
+				        	<p class="screen_mini_tit">The description for the image </p>
+				        	<p class="screen_text">Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde perferendis nemo debitis dolor.</p>
+				        </div>
+			      	</div>
+			    </div>
 		</div>
 	</section>
         
 	<section class="reviews">
 		<div class="container reviews_wrapper">
-		<h5 class="reviews_title">Reviews</h5>
-		<svg height="100" width="100"><circle cx="50" cy="50" r="40" fill="grey" /></svg>
-		<li class="reviews_list">Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?</li>
-		<svg height="100" width="100"><circle cx="50" cy="50" r="40" fill="grey" /></svg>
-		<li class="reviews_list">Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?</li>
-		<svg height="100" width="100"><circle cx="50" cy="50" r="40" fill="grey" /></svg>
-		<li class="reviews_list">Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?</li>
-		<svg height="100" width="100"><circle cx="50" cy="50" r="40" fill="grey" /></svg>
-		<li class="reviews_list">Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?</li>
+			<h5 class="reviews_title">Reviews</h5>
+			<svg height="100" width="100><circle cx="50" cy="50" r="40" fill="grey" color=#445161 /></svg>
+
+			<li class="reviews_list">Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?</li>
+			<svg height="100" width="100"><circle cx="50" cy="50" r="40" fill="grey" /></svg>
+			<li class="reviews_list">Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?</li>
+			<svg height="100" width="100"><circle cx="50" cy="50" r="40" fill="grey" /></svg>
+			<li class="reviews_list">Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?</li>
+			<svg height="100" width="100"><circle cx="50" cy="50" r="40" fill="grey" /></svg>
+			<li class="reviews_list">Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?</li>
 		</div>
 	</section>
 
 	<section class="buyitnow">
 		<div class="container buy_wrapper">
-        <h6 class="buy_title">Buy it now</h6>
-        <article class="buy_block">
-                <div class="buy_mini_title">Standart</div>
-                <div class="figure">
-                <ol class="buy-text-standart">
-<li>1. Porro officia cumque sint deleniti;</li><li> 2. Тemo facere rem vitae odit; </li><li>3. Cum odio, iste quia doloribus autem;</li><li> 4. Aperiam nulla ea neque.</li>
-                    </ol>
-                   </div> </article>
-        <article class="buy_block">
-                <div class="buy_mini_title">Premium</div>
-                <div class="figure">
-                <ol class="buy-text-premium">
-<li>1. Porro officia cumque sint deleniti;</li><li> 2. Тemo facere rem vitae odit; </li><li>3. Cum odio, iste quia doloribus autem;</li><li> 4. Aperiam nulla ea neque.</li><li>5. Porro officia cumque sint deleniti;</li><li> 6. Тemo facere rem vitae odit; </li><li>7. Cum odio, iste quia doloribus autem;</li>
-                    </ol>
-                    </div> </article>
-        <article class="buy_block">
-                <div class="buy_mini_title">Lux</div>
-                <div class="figure">
-                <ol class="buy-text-lux">
-<li>1. Porro officia cumque sint deleniti;</li><li> 2. Тemo facere rem vitae odit; </li><li>3. Cum odio, iste quia doloribus autem;</li><li> 4. Aperiam nulla ea neque.</li><li>5. Porro officia cumque sint deleniti;</li><li> 6. Тemo facere rem vitae odit; </li><li>7. Cum odio, iste quia doloribus autem;</li><li>8. Porro officia cumque sint deleniti;</li><li> 9. Тemo facere rem vitae odit; </li><li>10. Cum odio, iste quia doloribus autem;</li><li> 11. Aperiam nulla ea neque.</li><li>12. Porro officia cumque sint deleniti;</li>
-                    </ol>
-                </div>
-               </div> </article>
+	        <h6 class="buyitnow_title">Buy it now</h6>
+	        <article class="buy_block">
+	                <div class="buy_mini_title">Standart</div>
+	                <div class="figure">
+	                <ol class="buy-text-standart">
+	<li>1. Porro officia cumque sint deleniti;</li><li> 2. Тemo facere rem vitae odit; </li><li>3. Cum odio, iste quia doloribus autem;</li><li> 4. Aperiam nulla ea neque.</li>
+	                    </ol>
+	                   </div> </article>
+	        <article class="buy_block">
+	                <div class="buy_mini_title">Premium</div>
+	                <div class="figure">
+	                <ol class="buy-text-premium">
+	<li>1. Porro officia cumque sint deleniti;</li><li> 2. Тemo facere rem vitae odit; </li><li>3. Cum odio, iste quia doloribus autem;</li><li> 4. Aperiam nulla ea neque.</li><li>5. Porro officia cumque sint deleniti;</li><li> 6. Тemo facere rem vitae odit; </li><li>7. Cum odio, iste quia doloribus autem;</li>
+	                    </ol>
+	                    </div> </article>
+	        <article class="buy_block">
+	                <div class="buy_mini_title">Lux</div>
+	                <div class="figure">
+	                <ol class="buy-text-lux">
+	<li>1. Porro officia cumque sint deleniti;</li><li> 2. Тemo facere rem vitae odit; </li><li>3. Cum odio, iste quia doloribus autem;</li><li> 4. Aperiam nulla ea neque.</li><li>5. Porro officia cumque sint deleniti;</li><li> 6. Тemo facere rem vitae odit; </li><li>7. Cum odio, iste quia doloribus autem;</li><li>8. Porro officia cumque sint deleniti;</li><li> 9. Тemo facere rem vitae odit; </li><li>10. Cum odio, iste quia doloribus autem;</li><li> 11. Aperiam nulla ea neque.</li><li>12. Porro officia cumque sint deleniti;</li>
+	                    </ol>
+	                </div></article>
+        </div> 
     </section>
 
-	<footer class="container">
-      <div class="contacts">Contacts</div>
-        <div class="contacts_wrapper">
-            <form class="info">
-                <input placeholder="Your name:">
-                <input placeholder="Your email:">
+	<footer class="contacts">
+		 <div class="container contacts_wrapper">
+      		<div class="contacts">Contacts</div>
+                <form class="info">
+                <input placeholder="Your name:"></input>
+                <input placeholder="Your email:"></input>
                 <input placeholder="Your message:"></input>
                 <button>SEND</button>
-            </form>
+            	</form>
             <div class="navigation">
                 <img class="img-skype">
                 <img class="img-icq">
