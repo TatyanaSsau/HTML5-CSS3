@@ -266,6 +266,45 @@
                 align-items: center;
                 }
 
+                .buy_block
+                {display: flex;}
+
+                .product {
+				width: 300px;
+				box-sizing: border-box;
+				padding-top: 12px;
+				padding-left: 3px;
+				padding-right: 3px;
+				border-radius: 5px;
+				}
+				.buy_standart {
+				margin-top: 220px;
+				margin-bottom: 50px;
+				margin-left: 145px;
+				background-color: #445162;
+				}
+				.buy_premium {
+				margin-top: 125px;
+				margin-bottom: 50px;
+				margin-left: 45px;
+				margin-right: 45px;
+				background-color: #445162;
+				}
+				.buy_lux {
+				margin-top: 30px;
+				margin-right: 145px;
+				margin-bottom: 50px;
+				background-color: #445162;
+				}
+
+				.price
+				{text-align: center;
+				    font-size: 40px;
+				    color: #445162;
+				    background: white;
+				    padding: 13px 0; 
+    box-sizing: border-box;}
+
             </style>
 <body>
 	<header class="header">
@@ -347,7 +386,7 @@
 	<section class="reviews">
 		<div class="container reviews_wrapper">
 			<h5 class="reviews_title">Reviews</h5>
-			<svg height="100" width="100><circle cx="50" cy="50" r="40" fill="grey" color=#445161 /></svg>
+			<svg height="100" width="100><circle cx="50" cy="50" r="40" fill="grey" /></svg>
 
 			<li class="reviews_list">Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?</li>
 			<svg height="100" width="100"><circle cx="50" cy="50" r="40" fill="grey" /></svg>
@@ -359,31 +398,28 @@
 		</div>
 	</section>
 
-	<section class="buyitnow">
-		<div class="container buy_wrapper">
-	        <h6 class="buyitnow_title">Buy it now</h6>
-	        <article class="buy_block">
-	                <div class="buy_mini_title">Standart</div>
-	                <div class="figure">
-	                <ol class="buy-text-standart">
-	<li>1. Porro officia cumque sint deleniti;</li><li> 2. Тemo facere rem vitae odit; </li><li>3. Cum odio, iste quia doloribus autem;</li><li> 4. Aperiam nulla ea neque.</li>
-	                    </ol>
-	                   </div> </article>
-	        <article class="buy_block">
-	                <div class="buy_mini_title">Premium</div>
-	                <div class="figure">
-	                <ol class="buy-text-premium">
-	<li>1. Porro officia cumque sint deleniti;</li><li> 2. Тemo facere rem vitae odit; </li><li>3. Cum odio, iste quia doloribus autem;</li><li> 4. Aperiam nulla ea neque.</li><li>5. Porro officia cumque sint deleniti;</li><li> 6. Тemo facere rem vitae odit; </li><li>7. Cum odio, iste quia doloribus autem;</li>
-	                    </ol>
-	                    </div> </article>
-	        <article class="buy_block">
-	                <div class="buy_mini_title">Lux</div>
-	                <div class="figure">
-	                <ol class="buy-text-lux">
-	<li>1. Porro officia cumque sint deleniti;</li><li> 2. Тemo facere rem vitae odit; </li><li>3. Cum odio, iste quia doloribus autem;</li><li> 4. Aperiam nulla ea neque.</li><li>5. Porro officia cumque sint deleniti;</li><li> 6. Тemo facere rem vitae odit; </li><li>7. Cum odio, iste quia doloribus autem;</li><li>8. Porro officia cumque sint deleniti;</li><li> 9. Тemo facere rem vitae odit; </li><li>10. Cum odio, iste quia doloribus autem;</li><li> 11. Aperiam nulla ea neque.</li><li>12. Porro officia cumque sint deleniti;</li>
-	                    </ol>
-	                </div></article>
-        </div> 
+	<section class="container buyitnow">
+		<h6 class="buyitnow_title">Buy it now</h6>
+	    <article class="buy_block">
+	                <header class="product buy_standart ">
+	                	<div class="buy_mini_title">Standart</div>
+		                <ol class="buy-text-standart">
+						<li>1. Porro officia cumque sint deleniti;</li><li> 2. Тemo facere rem vitae odit; </li><li>3. Cum odio, iste quia doloribus autem;</li><li> 4. Aperiam nulla ea neque.</li>
+		                    </ol>
+		            </header>
+	                <header class="product buy_premium ">
+						<div class="buy_mini_title">Premium</div>
+		                <ol class="buy-text-premium">
+						<li>1. Porro officia cumque sint deleniti;</li><li> 2. Тemo facere rem vitae odit; </li><li>3. Cum odio, iste quia doloribus autem;</li><li> 4. Aperiam nulla ea neque.</li><li>5. Porro officia cumque sint deleniti;</li><li> 6. Тemo facere rem vitae odit; </li><li>7. Cum odio, iste quia doloribus autem;</li>
+		                    </ol>
+		            </header> 
+	                <header class="product buy_lux ">
+	                	<div class="buy_mini_title">Lux</div>
+		                <ol class="buy-text-lux">
+						<li>1. Porro officia cumque sint deleniti;</li><li> 2. Тemo facere rem vitae odit; </li><li>3. Cum odio, iste quia doloribus autem;</li><li> 4. Aperiam nulla ea neque.</li><li>5. Porro officia cumque sint deleniti;</li><li> 6. Тemo facere rem vitae odit; </li><li>7. Cum odio, iste quia doloribus autem;</li><li>8. Porro officia cumque sint deleniti;</li><li> 9. Тemo facere rem vitae odit; </li><li>10. Cum odio, iste quia doloribus autem;</li><li> 11. Aperiam nulla ea neque.</li><li>12. Porro officia cumque sint deleniti;</li>
+		                    </ol>
+		            </header>
+		</article>
     </section>
 
 	<footer class="contacts">
