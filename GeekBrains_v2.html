@@ -82,12 +82,6 @@
                 justify-content: space-around;
                 }
 
-                .reviews_wrapper
-                {
-                display: flex;
-                justify-content: space-between;
-                }
-
                 .header_title
                 {
                 margin-bottom: 40px;
@@ -254,9 +248,9 @@
                 }
 
 				.screen_position_right {
-                display: flex;
-                justify-content: center;
-                align-items: center;
+	                display: flex;
+	                justify-content: center;
+	                align-items: center;
                 }
 
                 .screen_center
@@ -266,44 +260,90 @@
                 align-items: center;
                 }
 
-                .buy_block
-                {display: flex;}
+                .buy_block {
+                display: flex;
+            	}
 
                 .product {
-				width: 300px;
-				box-sizing: border-box;
-				padding-top: 12px;
-				padding-left: 3px;
-				padding-right: 3px;
-				border-radius: 5px;
-				}
-				.buy_standart {
-				margin-top: 220px;
-				margin-bottom: 50px;
-				margin-left: 145px;
-				background-color: #445162;
-				}
-				.buy_premium {
-				margin-top: 125px;
-				margin-bottom: 50px;
-				margin-left: 45px;
-				margin-right: 45px;
-				background-color: #445162;
-				}
-				.buy_lux {
-				margin-top: 30px;
-				margin-right: 145px;
-				margin-bottom: 50px;
-				background-color: #445162;
+					width: 300px;
+					box-sizing: border-box;
+					padding-top: 12px;
+					padding-left: 3px;
+					padding-right: 3px;
+					border-radius: 5px;
 				}
 
-				.price
-				{text-align: center;
+				.buy_standart {
+					margin-top: 220px;
+					margin-bottom: 50px;
+					margin-left: 145px;
+					background-color: #445162;
+				}
+
+				.buy_premium {
+					margin-top: 125px;
+					margin-bottom: 50px;
+					margin-left: 45px;
+					margin-right: 45px;
+					background-color: #445162;
+				}
+
+				.buy_lux {
+					margin-top: 30px;
+					margin-right: 145px;
+					margin-bottom: 50px;
+					background-color: #445162;
+				}
+
+				.price {
+					text-align: center;
 				    font-size: 40px;
 				    color: #445162;
-				    background: white;
+				    background-color: white;
 				    padding: 13px 0; 
-    box-sizing: border-box;}
+   					box-sizing: border-box;
+   				}
+
+			    .buy_mini_title {
+			    	color: white;
+			    	text-align: center;
+			    	font-size: 24px;
+			    	margin-bottom: 12px;
+			    }
+
+			    .buy-text {
+			    	margin-top: 17px;
+    				margin-bottom: 17px;
+    				margin-left: 20px;
+    				line-height: 24px;
+			    	color: white;
+			    	font-size: 14px;
+			    	margin-bottom: 12px;			    	
+			    }
+
+			   .figure_reviews {
+			   	stroke:#EBEBEB; 
+			   	fill: #EBEBEB;
+			   }
+
+			   .reviews_list {
+			   	font: Roboto;
+			   	font-style: italic;
+			   	font-size: 14px;
+			   	color: black;
+			   }
+
+			   .reviews_sign {
+			   	font: Roboto;
+			   	font-style: italic;
+			   	font-size: 14px;
+			   	color: #989898;
+
+			   }
+
+			  .reviews_text {
+			  	position: center;
+			  }
 
             </style>
 <body>
@@ -386,15 +426,29 @@
 	<section class="reviews">
 		<div class="container reviews_wrapper">
 			<h5 class="reviews_title">Reviews</h5>
-			<svg height="100" width="100><circle cx="50" cy="50" r="40" fill="grey" /></svg>
+			<div class="reviews_text"
+				<svg><rect class="figure_reviews" x="10" y="10" width="483" height="121"  rx="5" ry="15"/></svg>
+				<p class="reviews_list">Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?</p>
+				<p class="reviews_sign">Lourens S.</p>
+			</div>
 
-			<li class="reviews_list">Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?</li>
-			<svg height="100" width="100"><circle cx="50" cy="50" r="40" fill="grey" /></svg>
-			<li class="reviews_list">Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?</li>
-			<svg height="100" width="100"><circle cx="50" cy="50" r="40" fill="grey" /></svg>
-			<li class="reviews_list">Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?</li>
-			<svg height="100" width="100"><circle cx="50" cy="50" r="40" fill="grey" /></svg>
-			<li class="reviews_list">Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?</li>
+			<div class="reviews_text"
+				<svg><rect class="figure_reviews" x="10" y="10" width="483" height="121"  rx="5" ry="15"/></svg>
+				<p class="reviews_list">Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?</p>
+				<p class="reviews_sign">Lourens S.</p>
+			</div>
+
+			<div class="reviews_text"
+				<svg><rect class="figure_reviews" x="10" y="10" width="483" height="121"  rx="5" ry="15"/></svg>
+				<p class="reviews_list">Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?</p>
+				<p class="reviews_sign">Lourens S.</p>
+			</div>
+
+			<div class="reviews_text"
+				<svg><rect class="figure_reviews" x="10" y="10" width="483" height="121"  rx="5" ry="15"/></svg>
+				<p class="reviews_list">Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?</p>
+				<p class="reviews_sign">Lourens S.</p>
+			</div>
 		</div>
 	</section>
 
@@ -403,20 +457,23 @@
 	    <article class="buy_block">
 	                <header class="product buy_standart ">
 	                	<div class="buy_mini_title">Standart</div>
-		                <ol class="buy-text-standart">
-						<li>1. Porro officia cumque sint deleniti;</li><li> 2. Тemo facere rem vitae odit; </li><li>3. Cum odio, iste quia doloribus autem;</li><li> 4. Aperiam nulla ea neque.</li>
+	                	<div class="price">$100</div>
+		                <ol class="buy-text">
+						<li>1. Porro officia cumque sint deleniti;</li> <li>  2. Тemo facere rem vitae odit; </li> <li> 3. Cum odio, iste quia doloribus autem;</li><li> 4. Aperiam nulla ea neque.</li>
 		                    </ol>
 		            </header>
 	                <header class="product buy_premium ">
 						<div class="buy_mini_title">Premium</div>
-		                <ol class="buy-text-premium">
-						<li>1. Porro officia cumque sint deleniti;</li><li> 2. Тemo facere rem vitae odit; </li><li>3. Cum odio, iste quia doloribus autem;</li><li> 4. Aperiam nulla ea neque.</li><li>5. Porro officia cumque sint deleniti;</li><li> 6. Тemo facere rem vitae odit; </li><li>7. Cum odio, iste quia doloribus autem;</li>
+						<div class="price">$100</div>
+		                <ol class="buy-text">
+						<li>1. Porro officia cumque sint deleniti;</li> <li> 2. Тemo facere rem vitae odit; </li> <li>3. Cum odio, iste quia doloribus autem;</li> <li> 4. Aperiam nulla ea neque.</li> <li>5. Porro officia cumque sint deleniti;</li> <li> 6. Тemo facere rem vitae odit; </li> <li>7. Cum odio, iste quia doloribus autem;</li>
 		                    </ol>
 		            </header> 
 	                <header class="product buy_lux ">
 	                	<div class="buy_mini_title">Lux</div>
-		                <ol class="buy-text-lux">
-						<li>1. Porro officia cumque sint deleniti;</li><li> 2. Тemo facere rem vitae odit; </li><li>3. Cum odio, iste quia doloribus autem;</li><li> 4. Aperiam nulla ea neque.</li><li>5. Porro officia cumque sint deleniti;</li><li> 6. Тemo facere rem vitae odit; </li><li>7. Cum odio, iste quia doloribus autem;</li><li>8. Porro officia cumque sint deleniti;</li><li> 9. Тemo facere rem vitae odit; </li><li>10. Cum odio, iste quia doloribus autem;</li><li> 11. Aperiam nulla ea neque.</li><li>12. Porro officia cumque sint deleniti;</li>
+	                	<div class="price">$100</div>
+		                <ol class="buy-text">
+						<li>1. Porro officia cumque sint deleniti;</li> <li> 2. Тemo facere rem vitae odit; </li> <li>3. Cum odio, iste quia doloribus autem;</li> <li> 4. Aperiam nulla ea neque.</li> <li>5. Porro officia cumque sint deleniti;</li> <li> 6. Тemo facere rem vitae odit; </li> <li>7. Cum odio, iste quia doloribus autem;</li> <li>8. Porro officia cumque sint deleniti;</li> <li> 9. Тemo facere rem vitae odit; </li> <li>10. Cum odio, iste quia doloribus autem;</li> <li> 11. Aperiam nulla ea neque.</li> <li>12. Porro officia cumque sint deleniti;</li>
 		                    </ol>
 		            </header>
 		</article>
